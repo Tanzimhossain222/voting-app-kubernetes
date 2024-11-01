@@ -4,8 +4,10 @@ metadata:
   name: worker-app-pod
   labels:
     app: demo-voting-app
-    name: worker-app-pod
 spec:
   containers:
   - name: worker-app
-    image: kodekloud/examplevotingapp_worker:v1
+    image: kodekloud/examplevotingapp_worker:v2
+    env: 
+    - name: ENV_VAR_NAME
+      value: "value"
