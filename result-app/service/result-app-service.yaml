@@ -13,4 +13,4 @@ spec:
     nodePort: 30005
   selector:
     app: demo-voting-app
-    name: result-app-pod
+    name: result-app-deployment
